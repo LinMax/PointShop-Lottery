@@ -30,6 +30,8 @@
 --------------------------------------------------------------------------------------------------------------------------------------------------
 --EDIT VALUES BELOW THIS---------------------------------------------------------------------------------------------------------------
 
+psl.Pointshop = "pointshop" // Change to pointshop2 to use it for pointshop 2 and pointshop for _Undefined
+
 //psl.CCommand Sets the command to use in chat. ie !psl or /psl
 //*NOTE* both / and ! will work || do not add the "/" or "!" to this value! example if you wanted your command to be "/lottery" or "!lottery" then just put "lottery"
 //Default "psl"

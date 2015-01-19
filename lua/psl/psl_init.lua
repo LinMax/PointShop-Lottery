@@ -187,10 +187,18 @@ function psl:Winrar()
 	//reset the jackpot
 	self.Jackpot = self.StartingJackpot
 	for k,v in pairs(self.Winrars) do
+		if psl.Pointshop == "pointshop" then
 		v:PS_GivePoints(PlayerPayout)
 		for i,p in pairs(player.GetAll()) do
 			p:PrintMessage( HUD_PRINTTALK , "PointShop Lottery: Player '"..v:Name().."' Won the Lottery, and got "..PlayerPayout.." "..self.PointsName.."!")
 		end
+		elseif psl.Pointshop == "pointshop2" then
+			v:PS2_GiveStandardPoints(PlayerPayout, "You won the Lottery")
+		for i,p in pairs(player.GetAll()) do
+			p:PrintMessage( HUD_PRINTTALK , "PointShop Lottery: Player '"..v:Name().."' Won the Lottery, and got "..PlayerPayout.." "..self.PointsName.."!")
+		end
+		end
+		end 
 	end
 	self:EndofRound(true)
 end
