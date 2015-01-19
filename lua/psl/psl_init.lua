@@ -195,7 +195,7 @@ function psl:Winrar()
 		elseif psl.Pointshop == "pointshop2" then
 			v:PS2_GiveStandardPoints(PlayerPayout, "You won the Lottery")
 		for i,p in pairs(player.GetAll()) do
-			p:PrintMessage( HUD_PRINTTALK , "PointShop Lottery: Player '"..v:Name().."' Won the Lottery, and got "..PlayerPayout.." "..self.PointsName.."!")
+			p:PrintMessage( HUD_PRINTTALK , "PointShop Lottery: Player '"..v:Name().."' Won the Lottery, and got "..PlayerPayout.." points!")
 		end
 		end
 		end 
